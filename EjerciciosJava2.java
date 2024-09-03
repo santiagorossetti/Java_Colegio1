@@ -1,8 +1,8 @@
-package cosasJAVA2;
+//package cosasJAVA2;
 import java.util.Scanner;
 
 
-public class Papucosas {
+public class EjerciciosJava2 {
 
 	public static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in);
@@ -48,7 +48,9 @@ public class Papucosas {
     		System.out.println( numA + " Es el mayor");
     	} else if(numA < numB) {
     		System.out.println( numB + " Es el mayor");
-    	}
+    	} else if(numA == numB){
+			System.out.println( numA + " y " + numB + " , como podras ver, son iguales ");
+		}
 	}
 	
 	
