@@ -5,44 +5,7 @@ import java.util.Scanner;
 public class EjerciciosJ2 {
 
 	public static void main(String[] args) {
-		 Scanner sc = new Scanner(System.in);
-		    
-	        System.out.println("Elija el ejercicio: ");
-	      
-
-	        int ejercicio = sc.nextInt();
-	        switch (ejercicio) {
-	        
-	        case 1:
-	        	
-	        	ejercicio1();
-		
-	        break;
-
-	        case 2:
-	    
-	        	ejercicio2();
-	        
-	        break;
-	        
-	        case 3:
-	        	
-	        	ejercicio3();
-	        
-	        break;
-	        
-	        case 4:
-	        	
-	        	ejercicio4();
-	        
-	        break;
-	        
-	        case 5:
-	        	
-	        	ejercicio5();
-	    }
-
-	        sc.close();
+		Menu();
 	}
 
 	
@@ -92,7 +55,7 @@ public class EjerciciosJ2 {
 	
 	
 	public static void ejercicio4 () {
-	/*Modifica la aplicación anterior, para
+	/* Modifica la aplicación anterior, para
 	  que nos pida el nombre que queremos introducir (recuerda usar JOptionPane).*/
 		
 		System.out.println("Por favor, ingrese su nombre asi lo/la puedo saludar: ");
@@ -121,6 +84,93 @@ public class EjerciciosJ2 {
         double area=Math.PI*Math.pow(radio, 2);
         
         System.out.println("El area del circulo es "+ area);
+        
+        sc.close();
 	}
+	
+	public static void ejercicio6 () {
 		
+	/*6) Lee un número por teclado e indica si es divisible entre 2 (resto = 0). 
+	 Si no lo es, también debemos indicarlo.*/
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese un numero y le digo si ese numero es divisible por 2 o no: ");
+	
+		int numIngresado = sc.nextInt();
+		
+		if (numIngresado % 2 == 0) {
+			System.out.println(numIngresado + " es divisible por 2");
+		} else {
+			System.out.println(numIngresado + " no es divisible por 2");
+		}
+		
+		
+		
+		sc.close();
+	}
+	
+		public static void ejercicio7 () {
+		/*7) Lee un número por teclado y muestra por consola, el carácter al que pertenece
+		  en la tabla ASCII. Por ejemplo: si introduzco un 97, me muestre una a.*/
+		
+			
+			
+			
+		}
+	
+		public static void Menu() {
+			 Scanner sc = new Scanner(System.in);
+			    
+		        System.out.println("Elija el ejercicio: ");
+		      
+
+		        int ejercicio = sc.nextInt();
+		        switch (ejercicio) {
+		        
+		        case 1:
+		        	
+		        	ejercicio1();
+			
+		        break;
+
+		        case 2:
+		    
+		        	ejercicio2();
+		        
+		        break;
+		        
+		        case 3:
+		        	
+		        	ejercicio3();
+		        
+		        break;
+		        
+		        case 4:
+		        	
+		        	ejercicio4();
+		        
+		        break;
+		        
+		        case 5:
+		        	
+		        	ejercicio5();
+		        
+		        break;
+		        
+		        case 6:
+		        	
+		        	ejercicio6();
+		        	
+		        break;
+		        
+		        case 7:
+		        	
+		        	ejercicio7();
+		        
+		        break;
+		    }
+
+		        sc.close();
+		}
 }
