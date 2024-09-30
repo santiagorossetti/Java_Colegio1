@@ -2,6 +2,7 @@ package ejerciciosJava2;
 import java.util.Scanner;
 
 
+
 public class EjerciciosJ2 {
 
 	public static void main(String[] args) {
@@ -114,9 +115,24 @@ public class EjerciciosJ2 {
 		/*7) Lee un número por teclado y muestra por consola, el carácter al que pertenece
 		  en la tabla ASCII. Por ejemplo: si introduzco un 97, me muestre una a.*/
 		
+			// no se puede realizar por el momento
 			
 			
+		}
+		
+		public static void ejercicio8 () {
+			/*Modifica el ejercicio anterior, para que en lugar de pedir un número,
+			  pida un carácter (char) y muestre su código en la tabla ASCII.*/
 			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("Introduzca un caracter para pasar a codigo ASCII");
+			
+			 char caracter = sc.next().charAt(0);
+			 
+		     int ASCII = (int) caracter;
+		 
+		        System.out.println("El codigo ASCII de " + caracter + " es " + ASCII);
 		}
 	
 		public static void Menu() {
@@ -169,6 +185,13 @@ public class EjerciciosJ2 {
 		        	ejercicio7();
 		        
 		        break;
+		        
+		        case 8:
+		        	
+		        	ejercicio8();
+		        
+		        break;		        
+		        
 		    }
 
 		        sc.close();
