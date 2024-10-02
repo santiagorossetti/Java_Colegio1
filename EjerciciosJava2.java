@@ -134,6 +134,25 @@ public class EjerciciosJ2 {
 		 
 		        System.out.println("El codigo ASCII de " + caracter + " es " + ASCII);
 		}
+		
+		public static void ejercicio9 () {
+			/*Lee un número por teclado que pida el precio de un producto
+			(puede tener decimales) y calcule el precio final con IVA. El IVA sera una constante que sera del 21%.*/
+			
+			Scanner sc = new Scanner(System.in);
+			
+			
+			final double IVA = 1.21;
+			
+			System.out.println("Ingrese el precio del producto: ");
+			
+			double precio = sc.nextDouble();
+			
+			double precioFinal = precio * IVA;
+			
+			System.out.println("El precio final es " + precioFinal);
+		}
+		
 	
 		public static void Menu() {
 			 Scanner sc = new Scanner(System.in);
@@ -192,6 +211,11 @@ public class EjerciciosJ2 {
 		        
 		        break;		        
 		        
+		        case 9:
+		        	
+		        	ejercicio9();
+		        
+		        break;
 		    }
 
 		        sc.close();
